@@ -210,6 +210,8 @@ function createDOM(todoAllInfo) {
     listItem.setAttribute("TodoID", `${todoAllInfo.Id}`);
     listItem.setAttribute("style", `border-left:5px solid ${todoAllInfo.Color}`);
     listItem.setAttribute("data-time", todoAllInfo.Time);
+    listItem.setAttribute("Color_", `${todoAllInfo.Color}`);
+    listItem.setAttribute("Place_", `${todoAllInfo.Place}`);
 
     const targetDateDiv = document.querySelector(`[data-id='${todoAllInfo.Date}']`);
     const listGroupUl = targetDateDiv.querySelector("ul");
