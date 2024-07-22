@@ -75,8 +75,8 @@ function getYearMonth(year, month) {
         listItem.classList.add('list-group-item');
         listItem.textContent = todo.Todo;
 
-        listItem.setAttribute("Color", `${todo.Color}`);
-        listItem.setAttribute("Place", `${todo.Place}`);
+        listItem.setAttribute("Color_", `${todo.Color}`);
+        listItem.setAttribute("Place_", `${todo.Place}`);
 
         listItem.setAttribute("data-bs-toggle", "modal");
         listItem.setAttribute("data-bs-target", "#staticBackdrop");
@@ -152,9 +152,9 @@ if (exampleModal) {
                 document.getElementById('inputId').value = todoId || '';
                 document.getElementById('inputDate').value = `${year}-${month}-${day}`;
                 document.getElementById('inputTime').value = button.getAttribute("data-time");
-                document.getElementById('inputPlace').value =button.getAttribute("Place");
+                document.getElementById('inputPlace').value =button.getAttribute("Place_");
                 document.getElementById('inputTodo').value = button.textContent;
-                document.getElementById('inputColor').value = button.getAttribute("Color");
+                document.getElementById('inputColor').value = button.getAttribute("Color_");
 
                 // document.getElementById('inputColor').value =button;
                 deleteBtn.classList.remove('d-none');
