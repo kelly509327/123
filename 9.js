@@ -196,6 +196,8 @@ saveBtn.addEventListener("click", () => {
     document.getElementById('inputPlace').value = '';
     document.getElementById('inputTodo').value = '';
     document.getElementById('inputColor').value = '#84443C';
+
+    getYearMonth(nowYear,nowMonth);
 });
 
 function createDOM(todoAllInfo) {
